@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Layout</title>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	}
+	.hola{
+	display: flex;
+	flex-direction: row;
+	height: 250vh;
+	}
+	.arriba{
+	display: flex;
+	width: 100vw;
+	height: 10vh;
+	background-color: white;
+	position: fixed;
+	}
+	.lateral{
+	width: 15vw;
+	height: 250vh;
+	background-color: coral;
+	}
+	.ll{
+	display: flex;
+	flex-direction: column;
+	width: 85vw;
+	height: 250vh;
+	background-color: lightgreen;
+	}
+	.pp{
+	width: 85vw;
+	height: 8vh;
+	background-color: white;
+	}
+	.cuadro1{
+	background-color: crimson;
+	flex-direction: column;
+	align-self: center;
+	width: 60vw;
+	height: 30vh;
+	margin-top: 3em;
+	}
+	.cuadros2{
+	display: flex;
+	align-self: center;
+	width: 60vw;
+	height: 40vh;
+	margin-bottom: 1.5em;
+	margin-top: 3em;
+	}
+	.mn{
+	background-color: lightcoral;
+	align-self: center;
+	width: 20vw;
+	height: 40vh;
+	}
+	.cuadros4{
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+	width: 60vw;
+	height: 40vh;
+	margin-bottom: 2vh;
+	}
+	.ki{
+	align-self: center;
+	background-color: indigo;
+	width: 10vw;
+	height: 20vh;
+	}
+	.cuadrote{
+	align-self: center;
+	background-color: crimson;
+	width:60vw;
+	height:60vh;
+	margin-bottom: 1.5vh;
+	}
+	.hg{
+	align-self: center;
+	background-color: indigo;
+	width:60vw;
+        height:10vh;
+	}
+	</style>
+</head>
+<body>
+	<div class="hola">
+		<header class="arriba">
+			<h1>Architect</h1>
+		</header>
+	<aside class="lateral"></aside>
+	<section class="ll">
+		<div class="cuadro1"></div>
+                <div class="cuadros2" style="justify-content: space-between">
+                        <div class="mn"></div>
+                        <div class="mn"></div>
+                </div>
+                <div class="cuadros4">
+                        <div class="ki"></div>
+                        <div class="ki"></div>
+                        <div class="ki"></div>
+                        <div class="ki"></div>
+                </div>
+                <div class="cuadrote"></div>
+                <div class="cuadros2" style="justify-content: space-between;">
+			 <div class="mn"></div>
+			 <div class="mn"></div>
+                </div>
+		<div class="cuadros2" style="flex-direction: column;">
+                         <div class="hg"></div>
+                         <div class="hg" style="background-color:burlywood" ></div>
+                </div>
+
+
+		<footer class="pp">
+			<p>footer</p>
+			<p>grid menu</p>
+		</footer>
+	</section>
+	</div>
+</body>
+</html>
